@@ -1,7 +1,8 @@
 /* css file */
 @import url("./theme.css");
+/* font */
+@import url("./font.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-

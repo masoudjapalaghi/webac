@@ -1,0 +1,25 @@
+{
+    "h1": "یک مثال ساده",
+    "change-locale": "Sprache wechseln zu \"{{changeTo}}\"",
+    "to-second-page": "به صفحه دوم",
+    "error-with-status": "یک خطا (کد وضعیت}}}) روی سرور رخ داده است",
+    "error-without-status": "خطایی روی سرور رخ داد",
+    "title": "صفحه اصلی |بعدی I18next",
+    "blog": {
+        "appDir": {
+            "question": "آیا از Next.JS 13 Next.js با دایرکتوری برنامه استفاده می کنید؟",
+            "answer": "سپس به این پست وبلاگ نگاهی بیندازید.",
+            "link": "https://locize.com/blog/next-13-app-dir-i18n/"
+        },
+        "optimized": {
+            "question": "آیا می خواهید برخی از ابرقدرت ها را برای ترجمه های بهینه برای همه طرف رها کنید؟",
+            "answer": "سپس ممکن است به این پست وبلاگ نگاهی بیندازید </1>.",
+            "link": "https://locize.com/blog/next-i18next-de/"
+        },
+        "ssg": {
+            "question": "آیا دوست دارید از SSG (صادرات بعدی) استفاده کنید؟",
+            "answer": "سپس ممکن است به این پست وبلاگ نگاهی بیندازید </1>.",
+            "link": "https://locize.com/blog/next-i18n-statisch/"
+        }
+    }
+}

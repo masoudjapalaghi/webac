@@ -4,7 +4,7 @@ module.exports = {
         // Or if using `src` directory:
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
-    darkMode: false,
+    darkMode: "class",
     theme: {
         extend: {
             colors: {
@@ -34,7 +34,6 @@ module.exports = {
                 "th-g-btntext": "var(--global_main_color_btn_text_color)",
                 "th-g-divider1": "var(--homepageShapeDividerList_Color1)",
                 "th-g-bg": "var(--home_background_color)",
-
             },
         },
     },

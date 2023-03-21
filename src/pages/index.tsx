@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import ThemeChanger from "../common/Components/Utils/ThemeChanger";
 
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <div className="antialiased font-sans h-full w-full bg-th-background text-th-primary-dark">
                 <ThemeChanger />
+                <i className="fi fi-rr-camera" />
                 <main>
                     <div className="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 bg-th-background">
                         <div className="relative max-w-7xl mx-auto">
