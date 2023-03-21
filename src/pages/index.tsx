@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import ThemeChanger from "../common/Components/Utils/ThemeChanger";
 
 const Home = () => {
