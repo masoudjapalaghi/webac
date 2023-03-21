@@ -1,123 +1,241 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import ThemeChanger from "../common/Components/Utils/ThemeChanger";
 
-const inter = Inter({ subsets: ['latin'] })
+const Home = () => {
+    return (
+        <div>
+            <div className="antialiased font-sans h-full w-full bg-th-background text-th-primary-dark">
+                <ThemeChanger />
+                <main>
+                    <div className="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 bg-th-background">
+                        <div className="relative max-w-7xl mx-auto">
+                            <div className="text-center">
+                                <h2 className="text-3xl tracking-tight font-extrabold text-th-accent-medium sm:text-4xl">
+                                    From the blog
+                                </h2>
+                                <p className="mt-3 max-w-2xl mx-auto text-xl sm:mt-4">
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Ipsa libero labore natus
+                                    atque, ducimus sed.
+                                </p>
+                            </div>
+                            <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+                                <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                                    <div className="flex-shrink-0">
+                                        <img
+                                            className="h-48 w-full object-cover"
+                                            src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className="flex-1 bg-th-background-secondary p-6 flex flex-col justify-between">
+                                        <div className="flex-1">
+                                            <p className="text-sm font-medium text-th-accent-medium">
+                                                <a
+                                                    href="#"
+                                                    className="hover:underline"
+                                                >
+                                                    Article
+                                                </a>
+                                            </p>
+                                            <a href="#" className="block mt-2">
+                                                <p className="text-xl font-semibold">
+                                                    Boost your conversion rate
+                                                </p>
+                                                <p className="mt-3 text-base">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Architecto accusantium
+                                                    praesentium eius, ut atque
+                                                    fuga culpa, similique sequi
+                                                    cum eos quis dolorum.
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div className="mt-6 flex items-center">
+                                            <div className="flex-shrink-0">
+                                                <a href="#">
+                                                    <span className="sr-only">
+                                                        Roel Aufderehar
+                                                    </span>
+                                                    <img
+                                                        className="h-10 w-10 rounded-full"
+                                                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                        alt=""
+                                                    />
+                                                </a>
+                                            </div>
+                                            <div className="ml-3">
+                                                <p className="text-sm font-medium">
+                                                    <a
+                                                        href="#"
+                                                        className="hover:underline"
+                                                    >
+                                                        Roel Aufderehar
+                                                    </a>
+                                                </p>
+                                                <div className="flex space-x-1 text-sm">
+                                                    <time dateTime="2020-03-16">
+                                                        Mar 16, 2020
+                                                    </time>
+                                                    <span aria-hidden="true">
+                                                        &middot;
+                                                    </span>
+                                                    <span>6 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="Generated by create next app" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
+                                <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                                    <div className="flex-shrink-0">
+                                        <img
+                                            className="h-48 w-full object-cover"
+                                            src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className="flex-1 bg-th-background-secondary p-6 flex flex-col justify-between">
+                                        <div className="flex-1">
+                                            <p className="text-sm font-medium text-th-accent-medium">
+                                                <a
+                                                    href="#"
+                                                    className="hover:underline"
+                                                >
+                                                    Video
+                                                </a>
+                                            </p>
+                                            <a href="#" className="block mt-2">
+                                                <p className="text-xl font-semibold">
+                                                    How to use search engine
+                                                    optimization to drive sales
+                                                </p>
+                                                <p className="mt-3 text-base">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Velit facilis
+                                                    asperiores porro quaerat
+                                                    doloribus, eveniet dolore.
+                                                    Adipisci tempora aut
+                                                    inventore optio animi.,
+                                                    tempore temporibus quo
+                                                    laudantium.
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div className="mt-6 flex items-center">
+                                            <div className="flex-shrink-0">
+                                                <a href="#">
+                                                    <span className="sr-only">
+                                                        Brenna Goyette
+                                                    </span>
+                                                    <img
+                                                        className="h-10 w-10 rounded-full"
+                                                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                        alt=""
+                                                    />
+                                                </a>
+                                            </div>
+                                            <div className="ml-3">
+                                                <p className="text-sm font-medium">
+                                                    <a
+                                                        href="#"
+                                                        className="hover:underline"
+                                                    >
+                                                        Brenna Goyette
+                                                    </a>
+                                                </p>
+                                                <div className="flex space-x-1 text-sm">
+                                                    <time dateTime="2020-03-10">
+                                                        Mar 10, 2020
+                                                    </time>
+                                                    <span aria-hidden="true">
+                                                        &middot;
+                                                    </span>
+                                                    <span>4 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                                    <div className="flex-shrink-0">
+                                        <img
+                                            className="h-48 w-full object-cover"
+                                            src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div className="flex-1 bg-th-background-secondary p-6 flex flex-col justify-between">
+                                        <div className="flex-1">
+                                            <p className="text-sm font-medium text-th-accent-medium">
+                                                <a
+                                                    href="#"
+                                                    className="hover:underline"
+                                                >
+                                                    Case Study
+                                                </a>
+                                            </p>
+                                            <a href="#" className="block mt-2">
+                                                <p className="text-xl font-semibold">
+                                                    Improve your customer
+                                                    experience
+                                                </p>
+                                                <p className="mt-3 text-base">
+                                                    Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing
+                                                    elit. Sint harum rerum
+                                                    voluptatem quo recusandae
+                                                    magni placeat saepe
+                                                    molestiae, sed excepturi
+                                                    cumque corporis perferendis
+                                                    hic.
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div className="mt-6 flex items-center">
+                                            <div className="flex-shrink-0">
+                                                <a href="#">
+                                                    <span className="sr-only">
+                                                        Daniela Metz
+                                                    </span>
+                                                    <img
+                                                        className="h-10 w-10 rounded-full"
+                                                        src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                                        alt=""
+                                                    />
+                                                </a>
+                                            </div>
+                                            <div className="ml-3">
+                                                <p className="text-sm font-medium">
+                                                    <a
+                                                        href="#"
+                                                        className="hover:underline"
+                                                    >
+                                                        Daniela Metz
+                                                    </a>
+                                                </p>
+                                                <div className="flex space-x-1 text-sm">
+                                                    <time dateTime="2020-02-12">
+                                                        Feb 12, 2020
+                                                    </time>
+                                                    <span aria-hidden="true">
+                                                        &middot;
+                                                    </span>
+                                                    <span>11 min read</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-    </>
-  )
-}
+    );
+};
+export default Home;

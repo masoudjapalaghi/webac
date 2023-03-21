@@ -1,0 +1,59 @@
+:root {
+  --footer_text_hover: #000000;
+  --footer_links_color: #000000;
+  --menu_text_hover_color: #000000;
+  --global_main_color: #000000;
+  --global_main_color_rgba_02: rgba(0, 0, 0, 0.2);
+  --global_main_color_rgba_07: rgba(0, 0, 0, 0.7);
+  --menu_color: #ebfffb;
+  --menu_text_color: #000000;
+  --menu_text_color_rgba_02: rgba(0, 0, 0, 0.2);
+  --menu_thin_border: #ebfffb;
+  --modules_color: #f8f9fb;
+  --modules_color_text: #000000;
+  --modules_color_box: #ebebeb;
+  --modules_color_text_box: #000000;
+  --modules_color_second: #f4f4f4;
+  --modules_color_text_second: #000000;
+  --modules_color_second_box: #ffffff;
+  --modules_color_text_second_box: #000000;
+  --inside_modules_color: #f8f9fb;
+  --inside_modules_color_text: #000000;
+  --inside_modules_color_box: #ebebeb;
+  --inside_modules_color_text_box: #000000;
+  --footer_back: #ebfffb;
+  --footer_text: #000000;
+  --global_main_color_btn_text_color: #ffffff;
+  --homepageShapeDividerList_Color1: #F8F9FB;
+  --home_background_color: #000000;
+  }
+  
+  [data-theme="pink"] {
+    --footer_text_hover: #ee0e51;
+    --footer_links_color: #ee0e51;
+    --menu_text_hover_color: #ee0e51;
+    --global_main_color: #ee0e51;
+    --global_main_color_rgba_02: rgba(238, 14, 81, 0.2);
+    --global_main_color_rgba_07: rgba(238, 14, 81, 0.7);
+    --menu_color: #e4dcef;
+    --menu_text_color: #000000;
+    --menu_text_color_rgba_02: rgba(0, 0, 0, 0.2);
+    --menu_thin_border: #e4dcef;
+    --modules_color: #eae8dc;
+    --modules_color_text: #000000;
+    --modules_color_box: #ffffff;
+    --modules_color_text_box: #000000;
+    --modules_color_second: #ebebeb;
+    --modules_color_text_second: #000000;
+    --modules_color_second_box: #ffffff;
+    --modules_color_text_second_box: #000000;
+    --inside_modules_color: #eae8dc;
+    --inside_modules_color_text: #000000;
+    --inside_modules_color_box: #ffffff;
+    --inside_modules_color_text_box: #000000;
+    --footer_back: #e4dcef;
+    --footer_text: #000000;
+    --global_main_color_btn_text_color: #ffffff;
+    --homepageShapeDividerList_Color1: #EAE8DC;
+    --home_background_color: #000000;
+  }
