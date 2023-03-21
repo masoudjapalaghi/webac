@@ -48,7 +48,7 @@ const Home = () => {
                                                     elit. Architecto accusantium
                                                     praesentium eius, ut atque
                                                     fuga culpa, similique sequi
-                                                    cum eos quis dolorum.
+                                                    cum eos quis dolorum. s
                                                 </p>
                                             </a>
                                         </div>
