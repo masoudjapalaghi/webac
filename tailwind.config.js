@@ -35,6 +35,10 @@ module.exports = {
                 "th-g-divider1": "var(--homepageShapeDividerList_Color1)",
                 "th-g-bg": "var(--home_background_color)",
             },
+            fontFamily: {
+                iranyekan: ["iranyekan"],
+                iranyekanBold: ["iranyekanBold"],
+            },
         },
     },
     plugins: [],

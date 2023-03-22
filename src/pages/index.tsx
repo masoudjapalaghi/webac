@@ -1,12 +1,40 @@
+import Link from "next/link";
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable camelcase */
+
+import { Inter, Roboto, Rubik_Iso } from "next/font/google";
 import ThemeChanger from "../common/Components/Utils/ThemeChanger";
 
+const inter = Inter({ subsets: ["latin"] });
+const rubikIso = Rubik_Iso({
+    subsets: ["latin"],
+    weight: "400",
+});
+const roboto = Roboto({
+    weight: ["400", "900"],
+    style: ["normal", "italic"],
+    subsets: ["latin"],
+});
 const Home = () => {
+    // If loading a variable font, you don't need to specify the font weight
     return (
         <div>
             <div className="antialiased font-sans h-full w-full bg-th-background text-th-primary-dark">
                 <ThemeChanger />
+                <div className="flex gap-4">
+                    <span className={rubikIso.className}>
+                        Whereas disregard and contempt for human rights have
+                        resulted{" "}
+                    </span>
+                    <span className={roboto.className}>masoud </span>
+                    <span className={inter.className}>masoud </span>
+                    <span className="font-iranyekan">مسعود </span>
+                    <span className="font-iranyekanBold">مسعود</span>
+                    <nav>
+                        <Link href="/about">asd</Link>
+                    </nav>
+                </div>
                 <i className="fi fi-rr-camera" />
                 <main>
                     <div className="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8 bg-th-background">

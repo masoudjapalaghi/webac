@@ -1,1 +1,17 @@
 @import url("./uicons-regular-rounded.css");
+
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../public/fonts/iranYekan/iranyekanwebregular.woff") format("woff");
+    font-display: auto;
+  }
+  @font-face {
+    font-family: iranyekanBold;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../public/fonts/iranYekan/iranyekanwebbold.woff") format("woff");
+    font-display: auto;
+  }

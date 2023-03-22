@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 // localization
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { appWithTranslation } from "next-i18next";
 // Theme
 import { ThemeProvider } from "next-themes";
