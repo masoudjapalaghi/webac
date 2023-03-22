@@ -6,3 +6,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html:lang(fa) {
+    direction: rtl;
+    font-family: BYekan, Helvetica, Arial, sans-serif;
+}
+html:lang(en) {
+    direction: ltr;
+    font-family: Poppins, Helvetica, Arial, sans-serif !important;
+}

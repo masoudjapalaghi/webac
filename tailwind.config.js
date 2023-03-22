@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-extraneous-dependencies, @typescript-eslint/no-var-requires
+const tailwindRtl = require("tailwindcss-rtl");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
@@ -41,5 +43,5 @@ module.exports = {
             },
         },
     },
-    plugins: [],
+    plugins: [tailwindRtl],
 };

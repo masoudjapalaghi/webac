@@ -11,6 +11,7 @@ module.exports = {
     i18n: {
         defaultLocale: "fa",
         locales: ["en", "fa"],
+        localeDetection: false,
     },
     /** To avoid issues when deploying to some paas (vercel...) */
     localePath:

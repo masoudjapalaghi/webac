@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { Inter, Roboto, Rubik_Iso } from "next/font/google";
 import ThemeChanger from "../common/Components/Utils/ThemeChanger";
+import LocaleChanger from "@/common/Components/Utils/LocaleChanger";
 
 const inter = Inter({ subsets: ["latin"] });
 const rubikIso = Rubik_Iso({
@@ -20,9 +21,10 @@ const Home = () => {
     // If loading a variable font, you don't need to specify the font weight
     return (
         <div>
-            <div className="antialiased font-sans h-full w-full bg-th-background text-th-primary-dark">
+            <div className="antialiased font-sans h-full w-full bg-th-background text-th-primary-dark ">
                 <ThemeChanger />
-                <div className="flex gap-4">
+                <LocaleChanger />
+                <div className="flex gap-4 ps-24 ">
                     <span className={rubikIso.className}>
                         Whereas disregard and contempt for human rights have
                         resulted{" "}
@@ -30,7 +32,7 @@ const Home = () => {
                     <span className={roboto.className}>masoud </span>
                     <span className={inter.className}>masoud </span>
                     <span className="font-iranyekan">مسعود </span>
-                    <span className="font-iranyekanBold">مسعود</span>
+                    <span className="font-iranyekanBold ">مسعود</span>
                     <nav>
                         <Link href="/about">asd</Link>
                     </nav>
