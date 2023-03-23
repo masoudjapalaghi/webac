@@ -1,0 +1,177 @@
+.base {
+    @apply whitespace-nowrap flex items-center justify-center gap-2 outline-none relative  font-normal text-center cursor-pointer text-sm;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.base:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ;
+}
+
+.base:active:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.full {
+    @apply w-full;
+}
+.large {
+    @apply h-10 py-1.5 px-3.9 leading-5;
+}
+.middle {
+    @apply h-8 py-1 px-3.9 leading-6;
+}
+.small {
+    @apply h-6 py-0 px-1.9 leading-6;
+}
+
+.primary {
+    @apply bg-blue-600 text-white;
+}
+.text {
+    @apply bg-transparent;
+}
+.link {
+    @apply bg-transparent text-blue-600;
+}
+
+.outline {
+    @apply bg-transparent border;
+}
+.dashed {
+    @apply bg-transparent border border-dashed;
+}
+
+.base:disabled {
+    cursor: not-allowed;
+    border-color: #d9d9d9;
+    color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.04);
+    box-shadow: none;
+}
+
+.mainTheme {
+    @apply bg-th-g-main text-th-g-btntext hover:opacity-80;
+}
+.mainTheme_tp {
+    @apply bg-transparent text-th-g-main border-th-g-main;
+}
+
+.mainTheme_tp:not(.priamry):hover {
+    @apply bg-th-g-main text-white hover:opacity-80;
+}
+.base.mainTheme:after,
+.base.mainTheme_tp:after {
+    box-shadow: 0 0 3px 8px var(--global_main_color);
+}
+
+.primaryTheme {
+    @apply bg-[#404040] text-white opacity-100 hover:opacity-80;
+}
+
+.primaryTheme_tp {
+    @apply bg-transparent text-[#404040] border-[#404040];
+}
+.primaryTheme_tp:not(.priamry):hover {
+    @apply bg-[#404040] text-white hover:opacity-80;
+}
+
+.base.primaryTheme:after,
+.base.primaryTheme_tp:after {
+    box-shadow: 0 0 3px 8px #404040;
+}
+
+.infoTheme {
+    @apply bg-blue-600 text-white hover:opacity-80;
+}
+.infoTheme_tp {
+    @apply bg-transparent text-blue-600 border-blue-600;
+}
+.infoTheme_tp:not(.priamry):hover {
+    @apply bg-blue-600 text-white hover:opacity-80;
+}
+.base.infoTheme:after,
+.base.infoTheme_tp:after {
+    box-shadow: 0 0 3px 8px #2563eb;
+}
+
+.successTheme {
+    @apply bg-green-600 text-white border-green-600 hover:opacity-80;
+}
+.successTheme_tp {
+    @apply bg-transparent text-green-600 border-green-600;
+}
+.successTheme_tp:not(.priamry):hover {
+    @apply bg-green-600 text-white hover:opacity-80;
+}
+.base.successTheme:after,
+.base.successTheme_tp:after {
+    box-shadow: 0 0 3px 8px #16a34a;
+}
+
+.warningTheme {
+    @apply bg-amber-600 text-white hover:opacity-80;
+}
+.warningTheme_tp {
+    @apply bg-transparent text-amber-600 border-amber-600;
+}
+.warningTheme_tp:not(.priamry):hover {
+    @apply bg-amber-600 text-white hover:opacity-80;
+}
+.base.warningTheme:after,
+.base.warningTheme_tp:after {
+    box-shadow: 0 0 3px 8px #d97706;
+}
+
+.errorTheme {
+    @apply bg-red-600 text-white hover:opacity-80;
+}
+.errorTheme_tp {
+    @apply bg-transparent text-red-600 border-red-600;
+}
+.errorTheme_tp:not(.priamry):hover {
+    @apply bg-red-600 text-white hover:opacity-80;
+}
+.base.errorTheme:after,
+.base.errorTheme_tp:after {
+    box-shadow: 0 0 3px 8px #dc2626;
+}
+.base:active:after,
+.base:active:after {
+    box-shadow: 0 0 0 0 white;
+}
+
+.mainRedius,
+.base.mainRedius:after,
+.base.mainRedius:active:after {
+    @apply rounded-md;
+}
+
+.circleRedius,
+.base.circleRedius:after,
+.base.circleRedius:active:after {
+    @apply rounded-full max-w-[40px] max-h-[40px];
+}
+.roundRedius,
+.base.roundRedius:after,
+.base.roundRedius:active:after {
+    @apply rounded-2xl;
+}
+.flatRedius,
+.base.flatRedius:after,
+.base.flatRedius:active:after {
+    @apply rounded-sm;
+}

@@ -5,8 +5,8 @@ import type { GetServerSideProps } from "next";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-import { Header } from "../module/Layouts/Header";
-import { Footer } from "../module/Layouts/Footer";
+import { Header } from "@modules/Layouts/Header";
+import { Footer } from "@modules/Layouts/Footer";
 
 type Props = {
     // Add custom props here

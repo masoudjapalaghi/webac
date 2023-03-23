@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import "../styles/globals.css";
 // localization
 import { appWithTranslation } from "next-i18next";
 // Theme

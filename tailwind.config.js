@@ -10,6 +10,11 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                primary: "#404040",
+                info: "var(--info)",
+                success: "var(--success)",
+                warning: "var(--warning)",
+                error: "var(--error)",
                 "th-m-hover": "var(--menu_text_hover_color)",
                 "th-m-bg": "var(--menu_color)",
                 "th-m-color": "var(--menu_text_color)",
@@ -36,6 +41,11 @@ module.exports = {
                 "th-g-btntext": "var(--global_main_color_btn_text_color)",
                 "th-g-divider1": "var(--homepageShapeDividerList_Color1)",
                 "th-g-bg": "var(--home_background_color)",
+            },
+            spacing: {
+                1.9: "0.438rem",
+                3.9: "0.938rem",
+                47.5: "11.895rem",
             },
             fontFamily: {
                 iranyekan: ["iranyekan"],

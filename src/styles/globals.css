@@ -9,9 +9,13 @@
 
 html:lang(fa) {
     direction: rtl;
-    font-family: BYekan, Helvetica, Arial, sans-serif;
+}
+html:lang(fa) * {
+    font-family: iranyekan, Helvetica, Arial, sans-serif ;
 }
 html:lang(en) {
     direction: ltr;
-    font-family: Poppins, Helvetica, Arial, sans-serif !important;
+}
+html:lang(en) * {
+    font-family: Poppins, Helvetica, Arial, sans-serif ;
 }

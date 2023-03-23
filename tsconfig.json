@@ -19,8 +19,12 @@
                 "name": "next"
             }
         ],
+        "baseUrl": ".",
         "paths": {
-            "@/*": ["./src/*"]
+            "@components": ["src/common/components"],
+            "@components/*": ["src/common/components/*"],
+            "@modules": ["src/modules"],
+            "@modules/*": ["src/modules/*"]
         }
     },
     "include": [
