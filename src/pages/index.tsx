@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { Inter, Roboto, Rubik_Iso } from "next/font/google";
 // import {} from "@components/Utils";
-import { Button, LocaleChanger, ThemeChanger } from "@components";
+import { Button, Icon, LocaleChanger, ThemeChanger } from "@components";
 
 const inter = Inter({ subsets: ["latin"] });
 const rubikIso = Rubik_Iso({
@@ -26,13 +26,13 @@ const Home = () => {
                 <ThemeChanger />
                 <LocaleChanger />
                 <Button
-                    variant="text"
-                    theme="success"
+                    // variant="text"
+                    // theme="success"
                     // shape="circle"
-                    disabled
+                    // disabled
                     // loading
                     // size="large"
-                    // icon="fi fi-rr-camera"
+                    icon="album-collection"
                 >
                     aPrimary
                 </Button>
@@ -45,6 +45,7 @@ const Home = () => {
                     <span className={inter.className}>masoud </span>
                     <span className="font-iranyekan">مسعود </span>
                     <span className="font-iranyekanBold ">مسعود</span>
+                    <Icon name="3" color="info" />
                     <nav>
                         <Link href="/about">asd</Link>
                     </nav>

@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import IconNames from "@constant/IconNames";
 
 import { Button } from "@components";
 
-// More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 const meta: Meta<typeof Button> = {
     title: "components/Button",
     component: Button,
@@ -25,15 +25,14 @@ const meta: Meta<typeof Button> = {
             name: "icon",
             type: { name: "string", required: false },
             // eslint-disable-next-line sonarjs/no-duplicate-string
-            defaultValue: "fi fi-rr-camera",
+            defaultValue: "Cannabis",
             description: "font Icon",
             table: {
                 type: { summary: "string" },
-                defaultValue: { summary: "fi fi-rr-camera" },
+                defaultValue: { summary: "Cannabis" },
             },
-            control: {
-                type: "text",
-            },
+            control: "select",
+            options: IconNames,
         },
         variant: {
             description: "outline | primary | dashed | text ",
@@ -107,8 +106,6 @@ const meta: Meta<typeof Button> = {
 
 export default meta;
 type Story = StoryObj<typeof Button>;
-
-// More on writing stories with args: https://storybook.js.org/docs/7.0/react/writing-stories/args
 
 // variant
 export const VariantPrimary: Story = {
@@ -233,7 +230,7 @@ export const Shapeflat: Story = {
 export const LoadingByText: Story = {
     args: {
         children: "LoadingByText",
-        icon: "fi fi-rr-camera",
+        icon: "Cannabis",
         shape: "flat",
         theme: "success",
         loading: true,
@@ -242,7 +239,7 @@ export const LoadingByText: Story = {
 export const LoadingByIcon: Story = {
     args: {
         children: "",
-        icon: "fi fi-rr-camera",
+        icon: "Cannabis",
         shape: "flat",
         theme: "success",
         loading: true,
@@ -252,7 +249,7 @@ export const LoadingByIcon: Story = {
 export const IconByText: Story = {
     args: {
         children: "",
-        icon: "fi fi-rr-camera",
+        icon: "Cannabis",
         shape: "circle",
         theme: "success",
     },
@@ -260,7 +257,7 @@ export const IconByText: Story = {
 export const IconWithoutText: Story = {
     args: {
         children: "icon text",
-        icon: "fi fi-rr-camera",
+        icon: "Cannabis",
         shape: "round",
         theme: "success",
     },
@@ -269,7 +266,7 @@ export const IconWithoutText: Story = {
 export const Disabled: Story = {
     args: {
         children: "Disabled",
-        icon: "fi fi-rr-camera",
+        icon: "Cannabis",
         shape: "flat",
         theme: "success",
         disabled: true,

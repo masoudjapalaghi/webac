@@ -24,7 +24,11 @@
             "@components": ["src/common/components"],
             "@components/*": ["src/common/components/*"],
             "@modules": ["src/modules"],
-            "@modules/*": ["src/modules/*"]
+            "@modules/*": ["src/modules/*"],
+            "@types": ["src/types"],
+            "@types/*": ["src/types/*"],
+            "@constant": ["src/constant"],
+            "@constant/*": ["src/constant/*"]
         }
     },
     "include": [

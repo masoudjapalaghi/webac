@@ -1,0 +1,15 @@
+.primaryColor {
+    @apply text-inherit;
+}
+.infoColor {
+    @apply text-info;
+}
+.successColor {
+    @apply text-success;
+}
+.warningColor {
+    @apply text-warning;
+}
+.errorColor {
+    @apply text-error;
+}

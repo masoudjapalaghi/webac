@@ -1,7 +1,10 @@
+/* eslint-disable no-undef */
 import { ButtonHTMLAttributes, FC, ReactNode } from "react";
-// import Styles
+// Style
 import s from "./btn.module.css";
-import { Snipper } from "@components/Loading";
+// Components
+import Snipper from "@components/Loading/Snipper";
+import Icon from "@components/Icon/Icon";
 
 type Size = "large" | "medium" | "small";
 type Variant = "outline" | "primary" | "dashed" | "text";
@@ -16,7 +19,7 @@ interface PropsType extends ButtonHTMLAttributes<HTMLButtonElement> {
     shape?: Shape;
     type?: "button";
     block?: boolean;
-    icon?: string;
+    icon?: TypeIcon;
     disabled?: boolean;
     loading?: boolean;
 }
@@ -62,7 +65,7 @@ const Button: FC<PropsType> = (props: PropsType) => {
                 </span>
             ) : (
                 <>
-                    {icon && <i className={`${icon} contents `} />}
+                    {icon && <Icon name={icon} />}
                     {children}
                 </>
             )}

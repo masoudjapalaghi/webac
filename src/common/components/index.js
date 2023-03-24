@@ -4,3 +4,5 @@ export * from "./Button";
 export * from "./Utils";
 // Loading
 export * from "./Loading";
+// Icon
+export * from "./Icon";
