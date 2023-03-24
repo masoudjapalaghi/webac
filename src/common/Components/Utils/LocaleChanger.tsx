@@ -1,9 +1,4 @@
 // import components
-// import { useTranslation } from "../../hooks/useTranslation";
-
-// improt styles
-// import styles from "./localaztion.module.css";
-
 import Link from "next/link";
 import { useRouter } from "next/router";
 

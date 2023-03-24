@@ -4,7 +4,8 @@ import Link from "next/link";
 /* eslint-disable camelcase */
 
 import { Inter, Roboto, Rubik_Iso } from "next/font/google";
-import { Button, LocaleChanger, ThemeChanger } from "@components";
+import { LocaleChanger, ThemeChanger } from "@components/Utils";
+import { Button } from "@components";
 
 const inter = Inter({ subsets: ["latin"] });
 const rubikIso = Rubik_Iso({

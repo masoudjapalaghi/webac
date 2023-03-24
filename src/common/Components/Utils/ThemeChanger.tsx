@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { useTheme } from "next-themes";
 
 const themes = [{ name: "Light" }, { name: "Pink" }];
