@@ -11,11 +11,11 @@ html:lang(fa) {
     direction: rtl;
 }
 html:lang(fa) * {
-    font-family: iranyekan, Helvetica, Arial, sans-serif ;
+    font-family: iranyekan, Helvetica, Arial, sans-serif;
 }
 html:lang(en) {
     direction: ltr;
 }
 html:lang(en) * {
-    font-family: Poppins, Helvetica, Arial, sans-serif ;
+    font-family: Poppins, Helvetica, Arial, sans-serif;
 }

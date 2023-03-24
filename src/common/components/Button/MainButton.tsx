@@ -1,6 +1,7 @@
 import { ButtonHTMLAttributes, FC, ReactNode } from "react";
 // import Styles
 import s from "./btn.module.css";
+import { Snipper } from "@components/Loading";
 
 type Size = "large" | "middle" | "small";
 type Variant = "outline" | "primary" | "dashed" | "text" | "link";
@@ -17,6 +18,7 @@ interface PropsType extends ButtonHTMLAttributes<HTMLButtonElement> {
     block?: boolean;
     icon?: string;
     disabled?: boolean;
+    loading?: boolean;
 }
 type PropsSizeType = Pick<PropsType, "size" | "block">;
 type PropsThemeType = Pick<PropsType, "theme" | "variant">;
@@ -32,11 +34,14 @@ const MainButton: FC<PropsType> = (props: PropsType) => {
         children,
         icon,
         disabled,
+        loading = false,
         ...rest
     } = props;
 
     const propsSize: PropsSizeType = { size, block };
     const propsthem: PropsThemeType = { theme, variant };
+
+    const finalDisabled: boolean = disabled || loading;
 
     return (
         <button
@@ -44,14 +49,23 @@ const MainButton: FC<PropsType> = (props: PropsType) => {
             className={`
             ${_ManageVarient(variant)}
             ${_ManageSize(propsSize)}
-            ${!disabled && _ManageTheme(propsthem)}
+            ${!finalDisabled && _ManageTheme(propsthem)}
             ${_ManageShape(shape)}
             `}
-            disabled={disabled}
+            disabled={finalDisabled}
             {...rest}
         >
-            {children}
-            {icon && <i className={`${icon} ${!children && "flex"}`} />}
+            {loading ? (
+                <span className="flex gap-2">
+                    <span>Loading</span>
+                    <Snipper />
+                </span>
+            ) : (
+                <>
+                    {children}
+                    {icon && <i className={`${icon} ${!children && "flex"}`} />}
+                </>
+            )}
         </button>
     );
 };

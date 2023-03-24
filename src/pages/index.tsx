@@ -26,12 +26,13 @@ const Home = () => {
                 <ThemeChanger />
                 <LocaleChanger />
                 <Button
-                    variant="dashed"
-                    theme="error"
+                    variant="text"
+                    theme="success"
                     // shape="circle"
                     disabled
-                    size="large"
-                    icon="fi fi-rr-camera "
+                    // loading
+                    // size="large"
+                    // icon="fi fi-rr-camera "
                 >
                     aPrimary
                 </Button>

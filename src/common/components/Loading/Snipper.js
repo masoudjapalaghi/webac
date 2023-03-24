@@ -1,11 +1,10 @@
+import s from "./Loading.module.css";
+
 const Snipper = () => {
     return (
-        <span
-            role="img"
-            aria-label="loading"
-            className="anticon anticon-loading anticon-spin"
-        >
+        <span role="img" aria-label="loading">
             <svg
+                className={s.snipper}
                 viewBox="0 0 1024 1024"
                 focusable="false"
                 data-icon="loading"
