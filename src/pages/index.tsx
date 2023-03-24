@@ -32,7 +32,7 @@ const Home = () => {
                     disabled
                     // loading
                     // size="large"
-                    // icon="fi fi-rr-camera "
+                    // icon="fi fi-rr-camera"
                 >
                     aPrimary
                 </Button>

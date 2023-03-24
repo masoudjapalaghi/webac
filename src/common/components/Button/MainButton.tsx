@@ -3,8 +3,8 @@ import { ButtonHTMLAttributes, FC, ReactNode } from "react";
 import s from "./btn.module.css";
 import { Snipper } from "@components/Loading";
 
-type Size = "large" | "middle" | "small";
-type Variant = "outline" | "primary" | "dashed" | "text" | "link";
+type Size = "large" | "medium" | "small";
+type Variant = "outline" | "primary" | "dashed" | "text";
 type Shape = "main" | "circle" | "round" | "flat";
 type Theme = "primary" | "main" | "info" | "success" | "warning" | "error";
 
@@ -23,15 +23,15 @@ interface PropsType extends ButtonHTMLAttributes<HTMLButtonElement> {
 type PropsSizeType = Pick<PropsType, "size" | "block">;
 type PropsThemeType = Pick<PropsType, "theme" | "variant">;
 
-const MainButton: FC<PropsType> = (props: PropsType) => {
+const Button: FC<PropsType> = (props: PropsType) => {
     const {
-        size,
+        size = "medium",
         variant = "primary",
         theme = "primary",
         type = "button",
         block = false,
         shape = "main",
-        children,
+        children = "Button",
         icon,
         disabled,
         loading = false,
@@ -57,19 +57,19 @@ const MainButton: FC<PropsType> = (props: PropsType) => {
         >
             {loading ? (
                 <span className="flex gap-2">
-                    <span>Loading</span>
+                    {children && <span>Loading</span>}
                     <Snipper />
                 </span>
             ) : (
                 <>
+                    {icon && <i className={`${icon} contents `} />}
                     {children}
-                    {icon && <i className={`${icon} ${!children && "flex"}`} />}
                 </>
             )}
         </button>
     );
 };
-export default MainButton;
+export default Button;
 
 //  *******====> STYLE MANAGING <====*******
 
@@ -79,7 +79,6 @@ const _ManageVarient = (varient: Variant): string => {
         outline: `${s.base} ${s.outline}`,
         dashed: `${s.base} ${s.dashed}`,
         text: `${s.base} ${s.text}`,
-        link: `${s.base} ${s.link}`,
     }[varient || "primary"];
 };
 
@@ -102,9 +101,9 @@ const _ManageSize = (propsSize: PropsSizeType): string => {
 
     return {
         large: ` ${s.large} ${isFull}`,
-        middle: ` ${s.middle} ${isFull}`,
+        medium: ` ${s.middle} ${isFull}`,
         small: ` ${s.small} ${isFull}`,
-    }[size || "middle"];
+    }[size || "medium"];
 };
 
 const _ManageShape = (shape: Shape): string => {

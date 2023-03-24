@@ -1,5 +1,5 @@
 .base {
-    @apply whitespace-nowrap flex items-center  justify-center gap-2 outline-none relative  font-normal text-center cursor-pointer text-sm;
+    @apply whitespace-nowrap flex items-center  justify-center gap-2 outline-none relative  font-normal  cursor-pointer text-sm;
     transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     user-select: none;
     touch-action: manipulation;
@@ -16,6 +16,9 @@
     opacity: 0;
     transition: all 0.5s;
     cursor: pointer;
+}
+.base:disabled:after {
+    cursor: not-allowed;
 }
 
 .base:active:after {
@@ -45,9 +48,6 @@
 .text {
     @apply bg-transparent;
 }
-.link {
-    @apply bg-transparent text-blue-600;
-}
 
 .outline {
     @apply bg-transparent border;
@@ -57,7 +57,6 @@
 }
 
 .base:disabled {
-    cursor: not-allowed;
     border-color: #d9d9d9;
     color: rgba(0, 0, 0, 0.25);
     background-color: rgba(0, 0, 0, 0.04);
@@ -164,7 +163,7 @@
 .circleRedius,
 .base.circleRedius:after,
 .base.circleRedius:active:after {
-    @apply rounded-full max-w-[40px] max-h-[40px];
+    @apply rounded-full p-4  max-w-[20px] max-h-[20px];
 }
 .roundRedius,
 .base.roundRedius:after,
