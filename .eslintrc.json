@@ -18,8 +18,7 @@
         },
         "import/resolver": {
             "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"],
-                "moduleDirectory": ["src", "node_modules"]
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
             }
         }
     },
