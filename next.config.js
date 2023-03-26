@@ -6,6 +6,9 @@ const nextConfig = {
     reactStrictMode: true,
     i18n,
     trailingSlash: true,
+    compiler: {
+        styledComponents: true,
+    },
 };
 
 module.exports = nextConfig;

@@ -1,0 +1,15 @@
+.primaryTheme {
+    @apply text-inherit;
+}
+.infoTheme {
+    @apply text-info;
+}
+.successTheme {
+    @apply text-success;
+}
+.warningTheme {
+    @apply text-warning;
+}
+.errorTheme {
+    @apply text-error;
+}

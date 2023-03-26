@@ -1,0 +1,7 @@
+.root {
+    @apply bg-layout-light border-e border-layout-light overflow-x-hidden px-2 text-white z-40;
+    transition: border-color ease-in-out 0.5s;
+}
+.openSideBar {
+    @apply fixed inset-0 m-auto w-full  h-full pt-14 md:h-[calc(100vh_-_47px)]  md:pt-4  md:sticky md:top-[47px] md:w-72  md:flex flex-col;
+}

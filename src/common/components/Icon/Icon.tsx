@@ -13,9 +13,14 @@ interface PropsType extends HTMLAttributes<HTMLElement> {
 }
 
 const Icon: FC<PropsType> = (props: PropsType) => {
-    const { name = "Cannabis", color = "primary" } = props;
+    const { name = "Cannabis", color = "primary", ...rest } = props;
 
-    return <i className={`fi fi-rr-${name} contents ${_ManageColor(color)}`} />;
+    return (
+        <i
+            className={`fi fi-rr-${name} contents ${_ManageColor(color)}`}
+            {...rest}
+        />
+    );
 };
 
 export default Icon;

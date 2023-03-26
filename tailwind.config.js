@@ -10,8 +10,11 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: "#404040",
+                "layout-light": "#2E383E",
+                "layout-mellow": "#242b2f",
+                "layout-thick": "#141a1b",
                 info: "var(--info)",
+                primary: "#404040",
                 success: "var(--success)",
                 warning: "var(--warning)",
                 error: "var(--error)",

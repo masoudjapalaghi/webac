@@ -6,3 +6,6 @@ export * from "./Utils";
 export * from "./Loading";
 // Icon
 export * from "./Icon";
+
+// Icon
+export * from "./Typography";

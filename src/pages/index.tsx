@@ -5,7 +5,15 @@ import Link from "next/link";
 
 import { Inter, Roboto, Rubik_Iso } from "next/font/google";
 // import {} from "@components/Utils";
-import { Button, Icon, LocaleChanger, ThemeChanger } from "@components";
+import {
+    Button,
+    Icon,
+    LocaleChanger,
+    ThemeChanger,
+    Typography,
+} from "@components";
+import { useAppDispatch } from "@redux/hooks";
+import { renderComponentInSideBar } from "@slices/SideBar";
 
 const inter = Inter({ subsets: ["latin"] });
 const rubikIso = Rubik_Iso({
@@ -17,9 +25,13 @@ const roboto = Roboto({
     style: ["normal", "italic"],
     subsets: ["latin"],
 });
-
+// const test = dispatch();
 const Home = () => {
-    // If loading a variable font, you don't need to specify the font weight
+    const dispatch = useAppDispatch();
+    const addToSideBar = () => {
+        dispatch(renderComponentInSideBar(<Button />));
+    };
+
     return (
         <div>
             <div className="antialiased font-sans h-full w-full bg-th-background text-th-primary-dark ">
@@ -33,10 +45,11 @@ const Home = () => {
                     // loading
                     // size="large"
                     icon="album-collection"
+                    onClick={addToSideBar}
                 >
                     aPrimary
                 </Button>
-                <div className="flex gap-4 ">
+                <div className="">
                     <span className={rubikIso.className}>
                         Whereas disregard and contempt for human rights have
                         resulted{" "}
@@ -45,6 +58,7 @@ const Home = () => {
                     <span className={inter.className}>masoud </span>
                     <span className="font-iranyekan">مسعود </span>
                     <span className="font-iranyekanBold ">مسعود</span>
+                    <Typography>masoud</Typography>
                     <Icon name="3" color="info" />
                     <nav>
                         <Link href="/about">asd</Link>
@@ -67,11 +81,11 @@ const Home = () => {
                             <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
                                 <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                                     <div className="flex-shrink-0">
-                                        <img
+                                        {/* <img
                                             className="h-48 w-full object-cover"
                                             src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
                                             alt=""
-                                        />
+                                        /> */}
                                     </div>
                                     <div className="flex-1 bg-th-background-secondary p-6 flex flex-col justify-between">
                                         <div className="flex-1">
@@ -103,11 +117,11 @@ const Home = () => {
                                                     <span className="sr-only">
                                                         Roel Aufderehar
                                                     </span>
-                                                    <img
+                                                    {/* <img
                                                         className="h-10 w-10 rounded-full"
                                                         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                                         alt=""
-                                                    />
+                                                    /> */}
                                                 </a>
                                             </div>
                                             <div className="ml-3">
@@ -135,11 +149,11 @@ const Home = () => {
 
                                 <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                                     <div className="flex-shrink-0">
-                                        <img
+                                        {/* <img
                                             className="h-48 w-full object-cover"
                                             src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
                                             alt=""
-                                        />
+                                        /> */}
                                     </div>
                                     <div className="flex-1 bg-th-background-secondary p-6 flex flex-col justify-between">
                                         <div className="flex-1">
@@ -175,11 +189,11 @@ const Home = () => {
                                                     <span className="sr-only">
                                                         Brenna Goyette
                                                     </span>
-                                                    <img
+                                                    {/* <img
                                                         className="h-10 w-10 rounded-full"
                                                         src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                                         alt=""
-                                                    />
+                                                    /> */}
                                                 </a>
                                             </div>
                                             <div className="ml-3">
@@ -207,11 +221,11 @@ const Home = () => {
 
                                 <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                                     <div className="flex-shrink-0">
-                                        <img
+                                        {/* <img
                                             className="h-48 w-full object-cover"
                                             src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
                                             alt=""
-                                        />
+                                        /> */}
                                     </div>
                                     <div className="flex-1 bg-th-background-secondary p-6 flex flex-col justify-between">
                                         <div className="flex-1">
@@ -246,11 +260,11 @@ const Home = () => {
                                                     <span className="sr-only">
                                                         Daniela Metz
                                                     </span>
-                                                    <img
+                                                    {/* <img
                                                         className="h-10 w-10 rounded-full"
                                                         src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=UsVmjgUMfb&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                                         alt=""
-                                                    />
+                                                    /> */}
                                                 </a>
                                             </div>
                                             <div className="ml-3">

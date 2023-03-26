@@ -1,24 +1,25 @@
-/* eslint-disable react/destructuring-assignment */
-import { Html, Head, Main, NextScript } from "next/document";
+import Document, { DocumentContext } from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
-const LANGUAGES = ["fa", "en"];
+export default class MyDocument extends Document {
+    static async getInitialProps(ctx: DocumentContext) {
+        const sheet = new ServerStyleSheet();
+        const originalRenderPage = ctx.renderPage;
 
-const Document = (props: { __NEXT_DATA__: { page: string } }) => {
-    const pathPrefix = props.__NEXT_DATA__.page.split("/")[1];
+        try {
+            ctx.renderPage = () =>
+                originalRenderPage({
+                    enhanceApp: App => props =>
+                        sheet.collectStyles(<App {...props} />),
+                });
 
-    const lang =
-        LANGUAGES.indexOf(pathPrefix) !== -1 ? pathPrefix : LANGUAGES[0];
-
-    return (
-        <Html lang={lang}>
-            <Head>
-                <meta charSet="utf-8" />
-            </Head>
-            <body>
-                <Main />
-                <NextScript />
-            </body>
-        </Html>
-    );
-};
-export default Document;
+            const initialProps = await Document.getInitialProps(ctx);
+            return {
+                ...initialProps,
+                styles: [initialProps.styles, sheet.getStyleElement()],
+            };
+        } finally {
+            sheet.seal();
+        }
+    }
+}
