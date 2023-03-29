@@ -8,6 +8,9 @@ import useSideBarStore from "@stores/useSideBarStore";
 import MultiLineInput from "@components/Form/MultiLineInput";
 import { Button } from "@components/Button";
 
+// Module
+import SettingText from "./SettingText";
+
 interface RichTextProps extends AreaHTMLAttributes<HTMLAreaElement> {
     label: string;
 }
@@ -22,7 +25,7 @@ const RichText: FC<RichTextProps> = () => {
         state => state.renderComponentInSideBar
     );
     const openSettigSideBar = () => {
-        renderComponentInSideBar(<div />);
+        renderComponentInSideBar(<SettingText />);
     };
 
     return (

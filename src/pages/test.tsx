@@ -1,6 +1,6 @@
 import React from "react";
 
-import { RichText } from "@components";
+import { RichText, Slider } from "@components";
 
 const TEst = () => {
     // const [value, setValue] = useState("This is inline editable");
@@ -8,7 +8,12 @@ const TEst = () => {
     //     "This is the multi-line version!"
     // );
 
-    return <RichText label="asd" />;
+    return (
+        <>
+            <RichText label="asd" />
+            <Slider max={14} />
+        </>
+    );
 };
 
 export default TEst;
