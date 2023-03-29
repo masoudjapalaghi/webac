@@ -9,11 +9,9 @@ import {
 // Styels
 import styled from "styled-components";
 
-// Types
-import { OptionalStyleTextType } from "@components/Utils/RichText/RichText";
-
 interface MultiLineInputType
     extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+    // eslint-disable-next-line no-undef
     optionalStyle: OptionalStyleTextType;
 }
 
@@ -52,7 +50,8 @@ const MultiLineInput: FC<MultiLineInputType> = (props: MultiLineInputType) => {
 export default MultiLineInput;
 
 const TextArea = styled.textarea<MultiLineInputType>(props => {
-    const { italic } = props.optionalStyle;
+    const { fontStyle } = props.optionalStyle;
+    // console.log(FontStyleEnum.italic);
 
     return {
         width: "100%",
@@ -63,9 +62,12 @@ const TextArea = styled.textarea<MultiLineInputType>(props => {
         border: "unset",
         "&:focus,&:hover": {
             border: "unset",
-            outline: "2px solid royalBlue",
+            outline: "unset",
+        },
+        "&::-webkit-resizer": {
+            display: "none",
         },
         fontSize: "24px",
-        fontStyle: italic ? "italic" : "normal",
+        fontStyle,
     };
 });
