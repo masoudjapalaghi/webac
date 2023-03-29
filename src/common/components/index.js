@@ -9,3 +9,6 @@ export * from "./Icon";
 
 // Icon
 export * from "./Typography";
+
+// Form
+export * from "./Form";

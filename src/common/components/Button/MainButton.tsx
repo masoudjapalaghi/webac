@@ -8,10 +8,10 @@ import Icon from "@components/Icon/Icon";
 
 type Size = "large" | "medium" | "small";
 type Variant = "outline" | "primary" | "dashed" | "text";
-type Shape = "main" | "circle" | "round" | "flat";
+type Shape = "main" | "circle" | "round" | "flat" | "mainStart" | "mainEnd";
 type Theme = "primary" | "main" | "info" | "success" | "warning" | "error";
 
-interface PropsType extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonType extends ButtonHTMLAttributes<HTMLButtonElement> {
     size?: Size;
     variant?: Variant;
     theme?: Theme;
@@ -22,11 +22,12 @@ interface PropsType extends ButtonHTMLAttributes<HTMLButtonElement> {
     icon?: TypeIcon;
     disabled?: boolean;
     loading?: boolean;
+    active?: boolean;
 }
-type PropsSizeType = Pick<PropsType, "size" | "block">;
-type PropsThemeType = Pick<PropsType, "theme" | "variant">;
+type PropsSizeType = Pick<ButtonType, "size" | "block">;
+type PropsThemeType = Pick<ButtonType, "theme" | "variant">;
 
-const Button: FC<PropsType> = (props: PropsType) => {
+const Button: FC<ButtonType> = (props: ButtonType) => {
     const {
         size = "medium",
         variant = "primary",
@@ -34,7 +35,7 @@ const Button: FC<PropsType> = (props: PropsType) => {
         type = "button",
         block = false,
         shape = "main",
-        children = "Button",
+        children = "",
         icon,
         disabled,
         loading = false,
@@ -115,5 +116,7 @@ const _ManageShape = (shape: Shape): string => {
         circle: ` ${s.circleRedius} `,
         round: ` ${s.roundRedius} `,
         flat: ` ${s.flatRedius} `,
+        mainStart: ` ${s.mainStart} `,
+        mainEnd: ` ${s.mainEnd} `,
     }[shape || "main"];
 };

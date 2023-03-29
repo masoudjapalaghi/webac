@@ -35,11 +35,20 @@
 .large {
     @apply h-10 py-1.5 px-3.9 leading-5;
 }
+.large.circleRedius {
+    @apply w-12 h-12;
+}
 .middle {
     @apply h-8 py-1 px-3.9 leading-6;
 }
+.middle.circleRedius {
+    @apply w-9 h-9;
+}
 .small {
     @apply h-6 py-0 px-1.9 leading-6;
+}
+.small.circleRedius {
+    @apply w-6 h-6;
 }
 
 .primary {
@@ -163,7 +172,7 @@
 .circleRedius,
 .base.circleRedius:after,
 .base.circleRedius:active:after {
-    @apply rounded-full p-4  max-w-[20px] max-h-[20px];
+    @apply rounded-full;
 }
 .roundRedius,
 .base.roundRedius:after,
@@ -173,5 +182,17 @@
 .flatRedius,
 .base.flatRedius:after,
 .base.flatRedius:active:after {
-    @apply rounded-sm;
+    @apply rounded-none border;
+}
+
+.mainEnd,
+.base.mainEnd:after,
+.base.mainEnd:active:after {
+    @apply rounded-e-md border;
+}
+
+.mainStart,
+.base.mainStart:after,
+.base.mainStart:active:after {
+    @apply rounded-s-md border;
 }

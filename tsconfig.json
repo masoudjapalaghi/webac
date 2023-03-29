@@ -31,9 +31,8 @@
             "@types/*": ["src/types/*"],
             "@constant": ["src/constant"],
             "@constant/*": ["src/constant/*"],
-            "@slices/*": ["src/lib/redux/slices/*"],
-            "@redux/*": ["src/lib/redux/*"],
-            "@redux": ["src/lib/redux"],
+            "@stores": ["src/lib/stores"],
+            "@stores/*": ["src/lib/stores/*"],
             "@services/*": ["src/lib/services/*"],
             "@api/*": ["src/lib/services/api/*"]
         }

@@ -1,6 +1,7 @@
 {
     "typescript.tsdk": "node_modules\\typescript\\lib",
     "typescript.enablePromptUseWorkspaceTsdk": true,
+    // "prettier.printWidth": 120,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     }

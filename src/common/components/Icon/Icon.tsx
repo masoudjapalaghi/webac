@@ -17,7 +17,9 @@ const Icon: FC<PropsType> = (props: PropsType) => {
 
     return (
         <i
-            className={`fi fi-rr-${name} contents ${_ManageColor(color)}`}
+            className={`fi fi-rr-${name} contents cursor-pointer ${_ManageColor(
+                color
+            )}`}
             {...rest}
         />
     );

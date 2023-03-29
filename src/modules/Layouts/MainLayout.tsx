@@ -13,11 +13,9 @@ const MainLayout: FC<PropsType> = props => {
     return (
         <div>
             <MainHeader />
-            <div className="flex">
+            <div className="flex min-h-screen">
                 <MainSideBar />
-                <main className={s.main}>
-                    <div>{children}</div>
-                </main>
+                <main className={s.main}>{children}</main>
             </div>
         </div>
     );

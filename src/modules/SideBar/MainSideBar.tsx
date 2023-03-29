@@ -1,17 +1,23 @@
 import { useLockBodyScroll } from "react-use";
 // redux
-import { useAppDispatch, useAppSelector } from "@redux/hooks";
-import { closeSideBar } from "@slices/SideBar";
+import { shallow } from "zustand/shallow";
+// import { closeSideBar } from "@slices/SideBar";
 // Style
 import s from "./sideBar.module.css";
 // Components
 import { Icon } from "@components";
 import useMediaQuery from "@hook/useMediaQuery";
+import useSideBarStore from "@stores/useSideBarStore";
 
 const MainSideBar = () => {
-    const { component, statusSideBar } = useAppSelector(state => state.sideBar);
-
-    const dispatch = useAppDispatch();
+    const { component, statusSideBar, closeSideBar } = useSideBarStore(
+        state => ({
+            component: state.component,
+            statusSideBar: state.statusSideBar,
+            closeSideBar: state.closeSideBar,
+        }),
+        shallow
+    );
 
     // contorol for lock body
     const md = useMediaQuery("md");
@@ -19,7 +25,7 @@ const MainSideBar = () => {
     useLockBodyScroll(finalConditinalIsLoack);
 
     const handleClose = () => {
-        dispatch(closeSideBar());
+        closeSideBar();
     };
 
     return (

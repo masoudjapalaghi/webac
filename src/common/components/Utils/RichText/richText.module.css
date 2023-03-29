@@ -1,0 +1,5 @@
+.textArea {
+    @apply hover:border-2 hover:border-blue-600 rounded-sm resize-y focus:outline-none w-full overflow-hidden;
+    font-size: var(--fontSize);
+    text-transform: uppercase;
+}

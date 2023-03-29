@@ -12,8 +12,7 @@ import {
     ThemeChanger,
     Typography,
 } from "@components";
-import { useAppDispatch } from "@redux/hooks";
-import { renderComponentInSideBar } from "@slices/SideBar";
+import useSideBarStore from "@stores/useSideBarStore";
 
 const inter = Inter({ subsets: ["latin"] });
 const rubikIso = Rubik_Iso({
@@ -27,9 +26,12 @@ const roboto = Roboto({
 });
 // const test = dispatch();
 const Home = () => {
-    const dispatch = useAppDispatch();
+    const renderComponentInSideBar = useSideBarStore(
+        state => state.renderComponentInSideBar
+    );
+
     const addToSideBar = () => {
-        dispatch(renderComponentInSideBar(<Button />));
+        renderComponentInSideBar(<Button />);
     };
 
     return (
