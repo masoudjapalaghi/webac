@@ -1,6 +1,6 @@
 import React from "react";
 
-import { RichText, Slider } from "@components";
+import { CheckBox, Input, RadioBox, RichText, Slider } from "@components";
 
 const TEst = () => {
     // const [value, setValue] = useState("This is inline editable");
@@ -12,6 +12,9 @@ const TEst = () => {
         <>
             <RichText label="asd" />
             <Slider max={14} />
+            <RadioBox />
+            <CheckBox />
+            <Input inputSize="large" />
         </>
     );
 };

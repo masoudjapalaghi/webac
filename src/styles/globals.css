@@ -8,6 +8,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-family: iranyekan, Helvetica, Arial, sans-serif;
+}
 html:lang(fa) {
     direction: rtl;
 }
