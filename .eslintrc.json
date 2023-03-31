@@ -41,6 +41,7 @@
         // "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
         "import/no-extraneous-dependencies": "off",
         "jsx-a11y/label-has-associated-control": "off",
+        "react/jsx-no-undef": ["off", { "allowGlobals": false }],
         "import/no-cycle": "off",
         "no-param-reassign": ["error", { "props": false }],
         "react/prop-types": ["off"],
