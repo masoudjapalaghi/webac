@@ -5,6 +5,15 @@ import { Meta, Title, IconGallery, IconItem } from "@storybook/addon-docs";
 # Iconography
 
 <IconGallery>
+  {
+  [1,2,3].map((token, i) => {
+    return(
+      <IconItem name={i}>
+      {token}
+      </IconItem>
+    )
+  })
+}
  <IconItem name="fi-rr-0">
       <i class="fi fi-rr-0"/>
 </IconItem>

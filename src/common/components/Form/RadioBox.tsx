@@ -15,6 +15,7 @@ interface RadioBoxType extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const RadioBox: FC<RadioBoxType> = (props: RadioBoxType) => {
+    console.log(CssColorNames);
     const { label = "تست", ...rest } = props;
 
     return (
